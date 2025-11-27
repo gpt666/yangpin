@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 
 // NOTE: Replace this URL with the actual URL of the image you uploaded.
 // Since I cannot access the uploaded file directly, please paste your image URL below.
-const CEO_IMAGE_URL = "https://i.ibb.co/pjtGNJzw/7a5adaecd88a4fdbe3b7086ed3749a37-2.jpg"; 
+const CEO_IMAGE_URL = "https://i.ibb.co/Df7MBQL3/0fe804c3d65ff4f925e68147e2c3c1eb.jpg"; 
 // I've kept a placeholder image here so the app doesn't break, 
 // but you should replace it with your specific "eating hotpot" photo!
 
@@ -201,8 +201,8 @@ const App = () => {
 
 const NavBar = () => (
   <nav className="nav-bar">
-    <div className="logo">HUAWEI</div>
-    <a href="#" className="btn-buy">立即购买</a>
+    <div className="logo">User科技</div>
+    <a href="https://appuj2vlnmu6527.h5.xiaoecloud.com/p/decorate/homepage" className="btn-buy">立即购买</a>
   </nav>
 );
 
@@ -216,7 +216,7 @@ const Hero = () => {
         {/* Placeholder logic: In a real app, user uploads replace this src */}
         <img 
           src={CEO_IMAGE_URL} 
-          alt="Yang Pin CEO" 
+          alt="Chang Yuan CEO" 
           className="ceo-image" 
         />
         <div style={{
@@ -228,7 +228,7 @@ const Hero = () => {
           background: 'linear-gradient(to top, black, transparent)',
           textAlign: 'left'
         }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Yang Pin CEO</h2>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Chang Yuan CEO</h2>
           <p style={{ color: '#aaa', fontSize: '0.9rem' }}>引领中华科技复兴</p>
         </div>
       </div>
@@ -260,7 +260,7 @@ const ReasonTwo = () => {
         不被老外<br />卡脖子
       </h2>
       <p className="reason-desc">
-        自主研发麒麟芯片。鸿蒙操作系统。我们打破枷锁，重新定义自由。不再受制于人，技术主权掌握在自己手中。
+        自主研发user芯片。果子操作系统。我们打破枷锁，重新定义自由。不再受制于人，技术主权掌握在自己手中。
       </p>
     </ScrollRevealSection>
   );
@@ -271,7 +271,7 @@ const ReasonThree = () => {
     <ScrollRevealSection>
       <span className="reason-number">原因 03</span>
       <h2 className="reason-title" style={{ fontSize: '3rem' }}>
-        加油华为<br />
+        加油User科技<br />
         <span style={{ 
           background: 'linear-gradient(90deg, #C30D23, #FFD700)', 
           WebkitBackgroundClip: 'text', 
@@ -283,26 +283,32 @@ const ReasonThree = () => {
       <p className="reason-desc">
         这是我们的时代。这是我们的骄傲。每一个字节都在高呼：遥遥领先！
       </p>
-      <button style={{
-        marginTop: '2rem',
-        padding: '1rem 3rem',
-        fontSize: '1.2rem',
-        background: '#C30D23',
-        color: 'white',
-        border: 'none',
-        borderRadius: '50px',
-        cursor: 'pointer'
-      }} className="pulse">
+      <a 
+        href="tel:+8617603316175"
+        style={{
+          display: 'inline-block',
+          marginTop: '2rem',
+          padding: '1rem 3rem',
+          fontSize: '1.2rem',
+          background: '#C30D23',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50px',
+          cursor: 'pointer',
+          textDecoration: 'none'
+        }} 
+        className="pulse"
+      >
         加入我们
-      </button>
+      </a>
     </ScrollRevealSection>
   );
 };
 
 const Footer = () => (
   <footer className="footer">
-    <p>Designed by Yang Pin in Shenzhen.</p>
-    <p style={{ marginTop: '0.5rem', opacity: 0.5 }}>Copyright © 2024 Huawei Fans Association.</p>
+    <p>Designed by Chang Yuan in Shenzhen.</p>
+    <p style={{ marginTop: '0.5rem', opacity: 0.5 }}>Copyright © 2024 User科技 Fans Association.</p>
   </footer>
 );
 
